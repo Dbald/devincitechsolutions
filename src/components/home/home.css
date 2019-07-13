@@ -1,0 +1,22 @@
+.home {
+
+}
+.intro {
+  width: 100%
+}
+.card-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  background: black
+}
+.wrap {
+  flex-wrap: wrap
+}
+.cards {
+  width: 25%;
+  transform: translateY(-50px);
+  background: orange;
+  filter: drop-shadow(5px 5px 5px black)
+}

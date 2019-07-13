@@ -1,0 +1,50 @@
+a {
+  text-decoration: none;
+  color: azure;
+  margin-right: 25px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+.icon {
+  height: 35px;
+  width: auto;
+  margin: 0%;
+  padding: 0%
+}
+
+.links {
+  font-size: 11px;
+}
+#tabbar {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  #tabbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+  }
+  #header {
+    display: none;
+  }
+  .logo, .icon {
+    transition: 2s;
+  }
+  .logo:active, .icon:active {
+    transform: scale(-1);
+  }
+}
