@@ -15,7 +15,7 @@ a {
 }
 
 .logo {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 .icon {
@@ -30,6 +30,13 @@ a {
 }
 #tabbar {
   display: none;
+}
+.tab {
+  display: flex;
+  flex-direction: column
+}
+.undertext {
+  margin: 0%
 }
 @media only screen and (max-width: 576px) {
   #tabbar {
