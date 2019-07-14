@@ -12,6 +12,7 @@ a {
   background: black;
   padding-top: 15px;
   padding-bottom: 15px;
+  transition: 2s
 }
 
 .logo {
@@ -34,6 +35,9 @@ a {
 .tab {
   display: flex;
   flex-direction: column
+}
+.tab:active {
+  background-color: white
 }
 .undertext {
   margin: 0%

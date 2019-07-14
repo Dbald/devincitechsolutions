@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../img/2.3.png";
 import "./navbar.css";
 
 class TabBar extends Component {
   render() {
     return (
-      <Router>
         <div id="tabbar" className="header">
           <div className="tab">
             <Link className="links" to="/about">
@@ -55,7 +54,6 @@ class TabBar extends Component {
             </Link>
           </div>
         </div>
-      </Router>
     );
   }
 }

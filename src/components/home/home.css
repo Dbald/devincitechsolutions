@@ -1,22 +1,55 @@
 .home {
-
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  background-color: purple;
 }
-.intro {
-  width: 100%
-}
-.card-holder {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-  background: black
-}
-.wrap {
-  flex-wrap: wrap
-}
-.cards {
-  width: 25%;
-  transform: translateY(-50px);
+.card {
+  height: auto;
+  width: 100%;
+  margin: 0;
   background: orange;
-  filter: drop-shadow(5px 5px 5px black)
+  grid-gap: 5px;
+  grid-column: span 4
+}
+.card-1 {
+  grid-column: span 12;
+  grid-row: span 4;
+  
+}
+.card-2 {
+  grid-row: span 6;
+  background: url(../../img/IMG_0162.jpg) no-repeat;
+  background-size: cover
+}
+.card-3 {
+  grid-row: span 5;
+  background: url(../../img/Edit_MG_1134-2.jpg) no-repeat;
+  background-size: cover
+}
+/* canvas {
+  
+} */
+
+@media only screen and (max-width: 576px) {
+  .home {
+    display: flex;
+    flex-direction: column
+  }
+  .card-1 {
+    background: none;
+    height: 10vh;
+    
+  }
+  /* a-canvas, a-grab-cursor {
+  position: absolute;
+  bottom: 0%;
+  height: 10vh;
+  z-index: 1;
+  } */
+  #scene , canvas {
+    width: 100%;
+    height: 200px;
+    z-index: 0;
+  }
 }

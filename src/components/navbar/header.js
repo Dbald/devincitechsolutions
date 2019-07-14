@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from '../../img/2.1.png';
 import './navbar.css';
 
 class Header extends Component {
   render() {
     return (
-      <Router>
         <div id="header" className="header">
           <div className="logo-holder">
             <Link to="/home">
@@ -22,7 +21,6 @@ class Header extends Component {
           <Link className="links" to="/contact">Contact</Link>
           </div>
         </div>
-      </Router>
     );
   }
 }
