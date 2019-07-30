@@ -99,7 +99,7 @@
   }
   .card-1 {
     height: 85vh;
-    
+    background-attachment: fixed;
   }
   .text-box {
     width: 80%;
