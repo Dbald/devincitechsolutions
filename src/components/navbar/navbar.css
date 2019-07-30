@@ -4,6 +4,20 @@ a {
   margin-right: 25px;
 }
 .header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: 1s;
+  z-index: 4
+}
+.header-scroll {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -12,22 +26,30 @@ a {
   background: black;
   padding-top: 15px;
   padding-bottom: 15px;
-  transition: 2s
+  transition: 1s;
+  z-index: 4
 }
-
+.test {
+  background: black
+}
 .logo {
-  height: 35px;
+  height: 50px;
   width: auto;
 }
-.icon {
+.icon, .hover {
   height: 35px;
   width: auto;
   margin: 0%;
   padding: 0%
 }
-
+.hover {
+  display: none;
+}
+.icon::selection {
+  display: none;
+}
 .links {
-  font-size: 11px;
+  font-size: 15px;
 }
 #tabbar {
   display: none;
@@ -35,9 +57,6 @@ a {
 .tab {
   display: flex;
   flex-direction: column
-}
-.tab:active {
-  background-color: white
 }
 .undertext {
   margin: 0%

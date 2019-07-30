@@ -4,9 +4,26 @@ import logo from '../../img/2.1.png';
 import './navbar.css';
 
 class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isTop: true
+    };
+  }
+
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 100;
+      if (isTop !== this.state.isTop) {
+        this.setState({ isTop })
+      }
+    });
+  }
+
+
   render() {
     return (
-        <div id="header" className="header">
+        <div id="header" className={this.state.isTop ? "header" : "header-scroll"} >
           <div className="logo-holder">
             <Link to="/home">
               <img className="logo" src={logo} alt="dts" />
