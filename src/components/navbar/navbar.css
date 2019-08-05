@@ -61,6 +61,16 @@ a {
 .undertext {
   margin: 0%
 }
+/* Footer */
+.footer {
+  background: black;
+  padding: 5%;
+  z-index: 4;
+}
+.arr {
+  color: white
+}
+/* Media */
 @media only screen and (max-width: 576px) {
   #tabbar {
     display: flex;
@@ -70,6 +80,10 @@ a {
     background: black;
     position: fixed;
     bottom: 0;
+  }
+  .footer {display: none}
+  #scene {
+    height: 100vh;
   }
   a {
     margin:0

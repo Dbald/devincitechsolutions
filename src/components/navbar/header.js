@@ -19,6 +19,9 @@ class Header extends Component {
       }
     });
   }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
 
 
   render() {

@@ -15,6 +15,42 @@
   padding: 0%;
   transition: 2s
   }
+  .curve-1 {
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity:0.7;
+    fill: rgb(206, 78, 55);
+    transform: scaleY(-1);
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    transition: 2s
+    }
+  .curve-scroll {
+    position: absolute;
+  bottom: 0;
+  left:0;
+  opacity:0.7;
+  fill: rgb(206, 78, 55);
+  transform: scaleY(1.2);
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  transition: 2s
+  }
+  .curve-scroll-1 {
+    position: absolute;
+  top: 0;
+  left:0;
+  opacity:0.7;
+  fill: rgb(206, 78, 55);
+  transform: scaleY(-1.2) scaleX(-1);
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  transition: 2s
+  }
   .curve-overlay {
     position: absolute;
     bottom: 0;
@@ -23,10 +59,45 @@
     width: 100%;
     margin: 0%;
     padding: 0%;
-    transform: scaleY(1.1) ;
+    transform: scaleY(1.2);
     z-index: 1;
-    transition: 2s
-
+    transition: 1s
+  }
+  .curve-overlay-1 {
+    position: absolute;
+    top: 0;
+    left:0;
+    fill:orange;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    transform: scaleY(-1.2) scaleX(-1);
+    z-index: 1;
+    transition: 1s
+  }
+  .curve-overlay-scroll {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    fill:orange;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    transform: scaleY(1.5);
+    z-index: 1;
+    transition: 1s
+  }
+  .curve-overlay-scroll-1 {
+    position: absolute;
+    top: 0;
+    left:0;
+    fill:orange;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    transform: scaleY(-1.5) scaleX(-1);
+    z-index: 1;
+    transition: 1s
   }
 .card {
   position: relative;
@@ -39,6 +110,7 @@
   transition: 2s
 }
 .card-1 {
+  
   grid-column: span 12;
   grid-row: span 8;
   background: url("https://i.imgur.com/fuVByqS.jpg") top no-repeat;
@@ -59,6 +131,7 @@
   margin: 5%;
   text-align: left;
   color: white;
+  z-index: 3;
   transition: 2s
 }
 .welcome-button {
@@ -68,7 +141,7 @@
   background: transparent;
   color: white;
   font-size: medium;
-  z-index: 1;
+  z-index: 4;
 }
 .welcome-button:hover {
   cursor: pointer;
@@ -78,12 +151,36 @@
   grid-row: span 3;
   background-size: contain
 }
+.card-2-scroll {
+  grid-column: span 12;
+  grid-row: span 3;
+  padding-top: 3%;
+  background-size: contain;
+  transition: 1s;
+  /* animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: ease-in; */
+}
+/* @keyframes example {
+  0%   {left:-200px;}
+
+  100%  {left:0px;}
+} */
 .card-3 {
   /* grid-row: span 5; */
   background-size: cover
 }
-@media only screen and (min-width: 2000px) {
-
+.card-12 {
+  background: url("https://i.imgur.com/xA0Z3SO.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  grid-column: span 12;
+  grid-row: span 6;
+}
+@media only screen and (min-width: 1500px) {
+.card-12 {
+  padding-bottom: 5%
+}
 }
 @media only screen and (max-width: 576px) {
   .home {
