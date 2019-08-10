@@ -33,12 +33,12 @@ class Header extends Component {
             </Link>
           </div>
           <div className="main-div">
-          <Link className="links" to="/about">About</Link>
+          <Link className={this.state.isTop ? "links" : "links-scroll"} to="/about">About</Link>
           {/* <Link to="apps">
             </Link> */}
-          <Link className="links" to="/services">Services</Link>
-          <Link className="links" to="/media">Media</Link>
-          <Link className="links" to="/contact">Contact</Link>
+          <Link className={this.state.isTop ? "links" : "links-scroll"} to="/services">Services</Link>
+          <Link className={this.state.isTop ? "links" : "links-scroll"} to="/media">Media</Link>
+          <Link className={this.state.isTop ? "links" : "links-scroll"} to="/contact">Contact</Link>
           </div>
         </div>
     );

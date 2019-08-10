@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(20, 1fr);
-  background-color: white;
+  background-color: orange;
 }
 .curve {
   position: absolute;
@@ -142,9 +142,13 @@
   color: white;
   font-size: medium;
   z-index: 4;
+  transition: 1s
 }
 .welcome-button:hover {
   cursor: pointer;
+  font-style: italic;
+  color: rgb(223, 223, 223);
+  border: solid 2px rgb(206, 78, 55)
 }
 .card-2 {
   grid-column: span 12;

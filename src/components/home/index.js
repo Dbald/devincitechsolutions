@@ -131,7 +131,7 @@ export default class Home extends Component {
               transform="translate(0.40071066,-47.210106)"
             />
           </svg>
-          <a-scene id="scene" embedded>
+          {/* <a-scene id="scene" embedded>
             <a-assets>
               <a-asset-item id="dts" src={require("../../models/dts.glb")} />
             </a-assets>
@@ -141,7 +141,7 @@ export default class Home extends Component {
               rotation="4 118.566 -1.695"
             />
             <a-sky src="https://i.imgur.com/xA0Z3SO.jpg" />
-          </a-scene>
+          </a-scene> */}
         </figure>
       </div>
     );

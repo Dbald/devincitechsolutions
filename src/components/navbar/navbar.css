@@ -3,6 +3,12 @@ a {
   color: azure;
   margin-right: 25px;
 }
+.links:hover {
+  border-bottom: 3px solid black
+}
+.links-scroll:hover {
+  border-bottom: 3px solid orange
+}
 .header {
   position: fixed;
   display: flex;
@@ -48,8 +54,9 @@ a {
 .icon::selection {
   display: none;
 }
-.links {
+.links, .links-scroll  {
   font-size: 15px;
+  transition: 1s
 }
 #tabbar {
   display: none;
