@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../img/2.3.png";
 import "./navbar.css";
 
@@ -16,7 +16,7 @@ class TabBar extends Component {
     return (
         <div id="tabbar" className="header">
           <div className="tab">
-            <Link className="links" to="/about">
+            <NavLink activeClassName="current" className="links" to="/about">
               <img
                 className="icon about"
                 src="https://i.imgur.com/3WK2dmv.png"
@@ -25,10 +25,10 @@ class TabBar extends Component {
               />
               
               <p className="undertext">About</p>
-            </Link>
+            </NavLink>
           </div>
           <div className="tab">
-            <Link className="links" to="/services">
+            <NavLink activeClassName="current" className="links" to="/services">
               <img
                 className="icon services"
                 src="https://i.imgur.com/VXvoEJm.png"
@@ -36,16 +36,16 @@ class TabBar extends Component {
                 alt="service-icon"
               />
               <p className="undertext">Services</p>
-            </Link>
+            </NavLink>
           </div>
           <div className="tab">
-            <Link className="links" to="/home">
+            <NavLink activeClassName="current" className="links" to="/home">
               <img className="logo" src={logo} alt="dts" />
               <p className="undertext">Home</p>
-            </Link>
+            </NavLink>
           </div>
           <div className="tab">
-            <Link className="links" to="/media">
+            <NavLink activeClassName="current" className="links" to="/media">
               <img
                 className="icon media"
                 src="https://i.imgur.com/Xe2Pv72.png"
@@ -53,10 +53,10 @@ class TabBar extends Component {
                 alt="media-icon"
               />
               <p className="undertext">Media</p>
-            </Link>
+            </NavLink>
           </div>
           <div className="tab">
-            <Link className="links" to="/contact">
+            <NavLink activeClassName="current" className="links" to="/contact">
               <img
                 className="icon contact"
                 src="https://i.imgur.com/oksKhDE.png"
@@ -64,7 +64,7 @@ class TabBar extends Component {
                 alt="contact-icon"
               />
               <p className="undertext">Contact</p>
-            </Link>
+            </NavLink>
           </div>
         </div>
     );

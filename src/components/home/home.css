@@ -1,7 +1,7 @@
 .home {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   background-color: orange;
 }
 .curve {
@@ -112,7 +112,7 @@
 .card-1 {
   
   grid-column: span 12;
-  grid-row: span 8;
+  grid-row: span 2;
   background: url("https://i.imgur.com/fuVByqS.jpg") top no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -152,13 +152,13 @@
 }
 .card-2 {
   grid-column: span 12;
-  grid-row: span 3;
+  grid-row: span 1;
   background-size: contain
 }
 .card-2-scroll {
   grid-column: span 12;
-  grid-row: span 3;
-  padding-top: 3%;
+  grid-row: span 1;
+  padding-top: 3.5%;
   background-size: contain;
   transition: 1s;
   /* animation-name: example;
@@ -172,14 +172,11 @@
 } */
 .card-3 {
   /* grid-row: span 5; */
-  background-size: cover
 }
-.card-12 {
-  background: url("https://i.imgur.com/xA0Z3SO.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  grid-column: span 12;
-  grid-row: span 6;
+.service-card {
+  height: 400px;
+  width: auto;
+  border-radius: 25px
 }
 @media only screen and (min-width: 1500px) {
 .card-12 {
@@ -187,6 +184,9 @@
 }
 }
 @media only screen and (max-width: 576px) {
+  h1 {
+    font-size: 30px
+  }
   .home {
     display: flex;
     flex-direction: column
@@ -205,6 +205,11 @@
   .text-box {
     width: 80%;
     margin: 5%;
+  }
+  .service-card {
+    height: 300px;
+    width: 80%;
+    margin: 3%
   }
   /* a-canvas, a-grab-cursor {
   position: absolute;

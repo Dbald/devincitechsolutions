@@ -1,0 +1,23 @@
+.Services {
+  margin: 5%
+}
+.choose {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly
+}
+.service-card {
+  height: 400px;
+  width: 100%;
+  border-radius: 25px
+}
+@media only screen and (max-width: 576px) {
+  .choose {
+    flex-direction: column;
+  }
+  .service-card {
+    height: 300px;
+    width: 100%;
+    margin: 3%
+  }
+}

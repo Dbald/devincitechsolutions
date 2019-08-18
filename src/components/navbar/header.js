@@ -18,6 +18,10 @@ class Header extends Component {
         this.setState({ isTop })
       }
     });
+
+    // document.addEventListener('scroll', () => {
+    //   const serveId = window.scrollTo
+    // })
   }
   componentWillUnmount() {
     clearInterval(this.interval);
@@ -36,7 +40,7 @@ class Header extends Component {
           <Link className={this.state.isTop ? "links" : "links-scroll"} to="/about">About</Link>
           {/* <Link to="apps">
             </Link> */}
-          <Link className={this.state.isTop ? "links" : "links-scroll"} to="/services">Services</Link>
+          <Link className={this.state.isTop ? "links" : "links-scroll"} to="/home/:services">Services</Link>
           <Link className={this.state.isTop ? "links" : "links-scroll"} to="/media">Media</Link>
           <Link className={this.state.isTop ? "links" : "links-scroll"} to="/contact">Contact</Link>
           </div>

@@ -21,11 +21,11 @@ class App extends Component {
         <Route exact path="/" component={Home}/>
         <Route path="/home" component={Home}/>
         <Route path="/about" component={About}/>
-        {/* <Route path="/apps" component={Apps}/>
-        <Route path="/services" component={Services}/>
-        <Route path="/contact" component={Contact}/> */}
+        {/* <Route path="/apps" component={Apps}/> */
+        // <Route path="/home/:services"/>
+        /* <Route path="/contact" component={Contact}/> */}
         <Route path="/" component={Footer}/>
-        <Route path='/' component={TabBar}/>
+        <Route path="/" component={TabBar}/>
       </div>
       </Router>
     );
