@@ -33,13 +33,13 @@ a {
   padding-top: 15px;
   padding-bottom: 15px;
   transition: 1s;
-  z-index: 4
+  z-index: 6
 }
 .test {
   background: black
 }
 .logo {
-  height: 35px;
+  height: 50px;
   width: auto;
 }
 .icon, .hover {
@@ -106,6 +106,9 @@ a {
   }
   .logo, .icon {
     transition: 2s;
+  }
+  .logo {
+    height: 35px;
   }
   .logo:active, .icon:active {
     transform: scale(-1);

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // import Iframe from 'react-iframe';
 import "./home.css";
 
+import About from "../about/index";
 // import Services from '../services/index'
 
 export default class Home extends Component {
@@ -10,7 +11,11 @@ export default class Home extends Component {
     super();
     this.state = {
       sectionA: true,
-      sectionB: true
+      sectionB: true,
+      sectionC: true,
+      serve1: true,
+      serve2: true,
+      serve3: true
     };
   }
 
@@ -26,6 +31,34 @@ export default class Home extends Component {
       const sectionB = window.scrollY < 55;
       if (sectionB !== this.state.sectionB) {
         this.setState({ sectionB });
+      }
+    });
+
+    document.addEventListener("scroll", () => {
+      const sectionC = window.scrollY < 600;
+      if (sectionC !== this.state.sectionC) {
+        this.setState({ sectionC });
+      }
+    });
+
+    document.addEventListener("scroll", () => {
+      const serve1 = window.scrollY < 700;
+      if (serve1 !== this.state.serve1) {
+        this.setState({ serve1 });
+      }
+    });
+
+    document.addEventListener("scroll", () => {
+      const serve2 = window.scrollY < 712;
+      if (serve2 !== this.state.serve2) {
+        this.setState({ serve2 });
+      }
+    });
+
+    document.addEventListener("scroll", () => {
+      const serve3 = window.scrollY < 714;
+      if (serve3 !== this.state.serve3) {
+        this.setState({ serve3 });
       }
     });
   }
@@ -74,33 +107,47 @@ export default class Home extends Component {
               transform="translate(0.40071066,-47.210106)"
             />
           </svg>
-          
         </figure>
+
         <figure
           className={this.state.sectionB ? "card card-2" : "card card-2-scroll"}
         >
+
+        </figure>
+
+        <figure className={this.state.sectionB ? "card card-3" : "card card-3-scroll"}>
+          <About />
+        </figure>
+        <figure className="card card-4" />
+        <figure className="margin-3"/>
+        <figure className={this.state.sectionC ? "card card-5" : "card card-5-scroll"}>
           <h1>Services</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
-        
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolor.
+          </p>
         </figure>
-        
-        <figure className="card card-3">
-        <img className="service-card web" src="https://i.imgur.com/veuf8Xp.png" alt="web"/>
+        <figure className="margin-3"/>
+        <figure className={this.state.serve1 ? "card card-6" : "card card-6-scroll"}>
+        <img
+            className="service-card web"
+            src="https://i.imgur.com/veuf8Xp.png"
+            alt="web"
+          />
         </figure>
-        <figure className="card card-4">
-        <img className="service-card graphic" src="https://i.imgur.com/nAvLc5C.png" alt="graphic"/>
+        <figure className={this.state.serve2 ? "card card-7" : "card card-7-scroll"}>
+        <img
+            className="service-card graphic"
+            src="https://i.imgur.com/nAvLc5C.png"
+            alt="graphic"
+          />
         </figure>
-        <figure className="card card-5">
-        <img className="service-card content" src="https://i.imgur.com/5Cv1FeZ.png" alt="content"/>
-        </figure>
-        <figure className="card card-6">
-          <h1>6</h1>
-        </figure>
-        <figure className="card card-7">
-        <iframe title="instagram" src="https://www.instagram.com/p/BjjhXRIA7hA/embed/captioned/" allowtransparency="true" height="697" data-instgrm-payload-id="instagram-media-payload-1" scrolling="no"></iframe>
-        </figure>
-        <figure className="card card-8">
-          <h1>8</h1>
+        <figure className={this.state.serve3 ? "card card-8" : "card card-8-scroll"}>
+        <img
+            className="service-card content"
+            src="https://i.imgur.com/5Cv1FeZ.png"
+            alt="content"
+          />
         </figure>
         <figure className="card card-9">
           <h1>9</h1>

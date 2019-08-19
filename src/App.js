@@ -5,7 +5,7 @@ import Footer from './components/navbar/footer';
 import TabBar from './components/navbar/tabbar';
 
 import Home from './components/home/index';
-import About from './components/about/index';
+// import About from './components/about/index';
 // import Services from './components/services/index';
 // import Media from './components/media/index';
 // import Contact from './components/contact/index';
@@ -20,7 +20,7 @@ class App extends Component {
         <Route path="/" component={Header}/>
         <Route exact path="/" component={Home}/>
         <Route path="/home" component={Home}/>
-        <Route path="/about" component={About}/>
+        {/* <Route path="/about" component={About}/> */}
         {/* <Route path="/apps" component={Apps}/> */
         // <Route path="/home/:services"/>
         /* <Route path="/contact" component={Contact}/> */}
