@@ -165,8 +165,8 @@
   padding-top: 10%;
   transition: 1s;
   animation-name: example;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out
 }
 @keyframes example {
   0%   {left:-200px;}
@@ -187,7 +187,7 @@
   grid-column: span 6;
   transition: 1s;
   animation-name: example;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
 }
 @keyframes example {
@@ -198,7 +198,7 @@
 .card-6-scroll {
   transition: 1s;
   animation-name: rise;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
 }
 @keyframes rise {
@@ -209,7 +209,7 @@
 .card-7-scroll {
   transition: 1s;
   animation-name: rise;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
 }
 @keyframes rise {
@@ -220,7 +220,7 @@
 .card-8-scroll {
   transition: 1s;
   animation-name: rise;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
 }
 @keyframes rise {
