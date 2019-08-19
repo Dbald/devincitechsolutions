@@ -164,14 +164,14 @@
 .card-3-scroll {
   padding-top: 10%;
   transition: 1s;
-  animation-name: example;
+  animation-name: rise;
   animation-duration: 1s;
   animation-timing-function: ease-in-out
 }
-@keyframes example {
-  0%   {left:-200px;}
+@keyframes rise {
+  0%   {bottom:-200px;}
 
-  100%  {left:0px;}
+  100%  {bottom:0px;}
 }
 .card-3,.card-5,.card-6,.card-7,.card-8 {
   /* grid-row: span 5; */
@@ -183,17 +183,17 @@
   padding-top: 10%
 }
 .card-5-scroll {
-  padding: 10% 5% 5% 5%;
+  padding-top: 10%;
   grid-column: span 6;
   transition: 1s;
-  animation-name: example;
+  animation-name: rise;
   animation-duration: 1s;
   animation-timing-function: ease-in;
 }
-@keyframes example {
-  0%   {left:-200px;}
+@keyframes rise {
+  0%   {bottom:-200px;}
 
-  100%  {left:0px;}
+  100%  {bottom:0px;}
 }
 .card-6-scroll {
   transition: 1s;
