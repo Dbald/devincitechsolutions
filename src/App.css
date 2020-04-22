@@ -1,8 +1,31 @@
 html {
   height: 100%;
-  width: 100%
+  width: 100%;
+  background-color: black;
+}
+h2 {
+  color: white;
+}
+#temp {
+  display: flex;
+  max-width: 30%;
+  min-width: 20%;
+  justify-content: center;
+}
+#insta {
+  width: 20%;
+  transition: 1s;
+}
+#insta:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  background: orange
+  background-color: black;
+  margin: 5%;
+  /* background: orange */
 }

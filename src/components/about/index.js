@@ -7,7 +7,7 @@ export default class About extends Component {
         <figure className="mission">
           <h1>About</h1>
           <p>
-            Born in Los Angeles, now based in the bay area, Devinci Tech
+            Born in Los Angeles, now based in the Bay Area, Devinci Tech
             Solutions provides web services such as Web Development, Web
             Editing/ Design. We love to have fun and thrive off friendships. Get
             to know us!

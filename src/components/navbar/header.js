@@ -40,7 +40,14 @@ class Header extends Component {
           <Link className={this.state.isTop ? "links" : "links-scroll"} to="/about">About</Link>
           {/* <Link to="apps">
             </Link> */}
-          <Link className={this.state.isTop ? "links" : "links-scroll"} to="/home/:services">Services</Link>
+            <div className={this.state.isTop ? "dropdown" : "dropdown-scroll"}>
+          <Link className={this.state.isTop ? "links services" : "links-scroll services-scroll"} to="/services">Services</Link>
+            <div className="dropdown-content">
+              <Link to="/services/web">Web Development</Link>
+              <Link to="/services/graphic">Graphic Design</Link>
+              <Link to="/services/content">Content Creation</Link>
+            </div>
+            </div>
           <Link className={this.state.isTop ? "links" : "links-scroll"} to="/media">Media</Link>
           <Link className={this.state.isTop ? "links" : "links-scroll"} to="/contact">Contact</Link>
           </div>

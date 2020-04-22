@@ -19,6 +19,7 @@ export default class Home extends Component {
     };
   }
 
+// Scroll Animations
   componentDidMount() {
     document.addEventListener("scroll", () => {
       const sectionA = window.scrollY < 50;
@@ -74,9 +75,9 @@ export default class Home extends Component {
           <div className="text-box">
             <h1>Welcome to DTS!</h1>
             <p>
-              Born in Los Angeles, now based in the bay area, Devinci Tech
+              Born in Los Angeles, now based in the Bay Area, Devinci Tech
               Solutions provides web services such as Web Development, Web
-              Editing/ Design. We like to have fun and thrive off friendships.
+              Editing/ Design. We love to have fun and thrive off friendships.
               Get to know us!
             </p>
             <button className="welcome-button" href="">
@@ -112,7 +113,6 @@ export default class Home extends Component {
         <figure
           className={this.state.sectionB ? "card card-2" : "card card-2-scroll"}
         >
-
         </figure>
 
         <figure className={this.state.sectionB ? "card card-3" : "card card-3-scroll"}>
