@@ -28,7 +28,7 @@ class App extends Component {
         <Route path="/" component={TabBar}/> */}
         <img id="temp" src="https://i.imgur.com/kRXDFcQ.png" alt="logo" />
         <h1>DTS is getting a face lift!</h1>
-        <h2>Follow us on Instagram for update and inquiries.<br/> THANK YOU</h2>
+        <h2>Follow us on Instagram for updates and inquiries.<br/> THANK YOU</h2>
         <a href="https://www.instagram.com/devincitechsolutions/" ><img id="insta" src="https://i.imgur.com/tRj0wrb.png" alt="gram" /></a>
 
       </div>
