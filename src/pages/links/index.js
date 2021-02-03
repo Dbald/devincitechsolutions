@@ -9,7 +9,7 @@ class Links extends Component {
                 <img id="logo" src="https://i.imgur.com/nW7leHl.png" alt="logo" />
                 </div>
                 <div className="link_section">
-                <a className="hyper" href="https://www.gofundme.com/f/3w6gud-isaiahs-recovery-fund?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer" target="_blank" rel="noopener noreferrer"><button className="link_button">Isaiah's Recovery Fund</button></a>
+                <a className="hyper" href="https://www.gofundme.com/f/3w6gud-isaiahs-recovery-fund?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer" target="_blank" rel="noopener noreferrer"><button className="link_button">Isaiah's<br/> Recovery<br/>  Fund</button></a>
                 <a className="hyper" href="https://itsdevinci.com/" target="_blank" rel="noopener noreferrer"><button className="link_button">Portfolio</button></a>
                 
                 </div>
