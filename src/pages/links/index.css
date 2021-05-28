@@ -3,10 +3,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 75%;
-    background: #ffde59;
-    border-radius: 15px;
-    filter: drop-shadow(0 0.3rem 0.83rem rgba(0, 0, 0, 0.226));
-    margin: 3%;
 }
 /* .link_header {
     
@@ -23,16 +19,17 @@
 .link_button {
     padding: 3%;
     margin: 3%;
-    background: rgb(194, 97, 97);
+    background: #d6ad60;
     border: none;
-    border-radius: 100%;  
+    width: 60%;
+    border-radius: 5px;
     filter: drop-shadow(0 0.75rem 0 rgb(54, 40, 40));  
     transition: 1s;
     color:white;
 }
 .link_button:hover {
     cursor: pointer;
-    background: rgb(146, 77, 77);
+    background: #b68d40
 }
 .link_button:active, .link_button:hover {
     transform: translateY(16px);
