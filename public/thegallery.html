@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="skyTexture" src="https://i.imgur.com/omXrF6Y.png" alt="space" />
+            <a-assets-items id="dome" src="../src/models/dome.glb" />
+        </a-assets>
+        <a-sky id="space" src="#skyTexture"></a-sky>
+        <a-entity gltf-model="#dome" position="0 0.522 11.289" scale="1.532 1.005 1.480" id="dome"></a-entity>
+        <a-entity geometry="primitive: cylinder" material="color: #FFF" position="0 0 -10.326" scale="4.879 1 -4.531"></a-entity>
+        <a-entity geometry="primitive: box" material="color: #FFF" scale="3.296 1 16.133"></a-entity>
+        <a-entity geometry="primitive: cylinder" material="color: #FFF" position="0 0 11.035" scale="12.722 1 11.643"></a-entity>
+        <a-entity id="rig" position="0 0 -10.727" rotation="0 -180 0">
+            <a-camera id="camera" wasd-controls="" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-camera>
+          </a-entity>
+          <a-entity oculus-touch-controls="hand: left"></a-entity>
+<a-entity oculus-touch-controls="hand: right"></a-entity>
+        
+
+    </a-scene>
+</body>
+
+</html>
