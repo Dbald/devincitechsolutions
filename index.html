@@ -2,14 +2,16 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
   </head>
   <body>
     <a-scene>
         <a-assets>
-            <a-asset-item id="devintro" src=""></a-asset-item>
-        </a-assets>
-      <a-entity ></a-entity>
-      <a-sky color="black"></a-sky>
+            <a-asset-item id="devintro" src="/assets/intro/devinintro.gltf"></a-asset-item>
+            <audio id="welcome" src="/assets/sounds/hellotdc.mp3" preload="auto"></audio>
+        </a-assets> 
+      <a-gltf-model src="#devintro" animation-mixer="loop: once; timeScale: 1.2" sound="src: #welcome; autoplay: true" position="0 1.16 -5" rotation="180.73985 170 195"></a-gltf-model>
+      <a-sky color="white"></a-sky>
     </a-scene>
   </body>
 </html>
