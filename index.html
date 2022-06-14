@@ -17,22 +17,24 @@
       <a-asset-item id="devintro" src="/assets/intro/devinintro.gltf"></a-asset-item>
       <a-asset-item id="island" src="/assets/models/island/island.gltf"></a-asset-item>
       <a-asset-item id="vr" src="/assets/models/vrdev/VRDEV.gltf"></a-asset-item>
+      <a-asset-item id="ships" src="/assets/models/ships/smallfleet.gltf"></a-asset-item>
       <audio id="welcome" src="/assets/sounds/hellotdc.mp3" preload="auto"></audio>
-      <img id="bg" src="assets/black-grid.png" />
+      <img id="bg" src="assets/models/island/space.png" />
     </a-assets>
     <a-entity camera="" position="-0.07923497587007164 1.6 2.6618630737347417" wasd-controls="false" look-controls=""
       rotation="0.6875493541569879 4.010704565915768 0"></a-entity>
     <!-- <a-gltf-model src="#devintro" animation-mixer="loop: once; timeScale: 1.2" sound="src: #welcome; autoplay: true" position="0 1.16 -5" rotation="180.73985 170 195"></a-gltf-model> -->
     <a-gltf-model src="#island" animation-mixer="timeScale: 1.2" gltf-model="/assets/models/island/island.gltf"
       position="0 -6.4 0" rotation="0 180 0"></a-gltf-model>
-    <a-gltf-model src="#vr" animation-mixer position="0 0.3dsd 0.3" rotation="0 0 0"></a-gltf-model>
+    <a-gltf-model src="#vr" animation-mixer position="0 0.3 0.3" rotation="0 0 0"></a-gltf-model>
+    <a-gltf-model src="#ships" animation-mixer="" position="0 -11.27 -107.10026" scale="26.3 26.3 26.3" gltf-model="/assets/models/ships/smallfleet.gltf"></a-gltf-model>
     <!-- <a-box id="enter_button" color="black" position="0 1.5 0" scale="2.4 2.4 0.4"></a-box> -->
     <!-- <a-videosphere src="#antarctica"></a-videosphere> -->
     <!-- <a-entity id="ocean" ocean="density: 20; width: 50; depth: 50; speed: 4"
       material="color: #9CE3F9; opacity: 0.75; metalness: 0; roughness: 1" rotation="-90 0 0"></a-entity> -->
-    <a-sky src="#bg" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear"></a-sky>
+      <a-sky src="#bg" animation="property: rotation; to: -360 360 -360; loop: NaN; dur: 500000; easing: linear" material="" geometry="" scale="-4.17233 4.17233 4.17233" rotation="-47.937650518386306 47.937650518386306 -47.937650518386306"></a-sky>
 
-    <a-entity id="light" light="type: directional; color: white" position="0 9 0"></a-entity>
+    <a-entity id="light" light="type: directional; color: white" intensity="1.6" position="0 9 0"></a-entity>
   </a-scene>
   <script>
 
