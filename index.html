@@ -27,13 +27,22 @@
       <img id="grid" src="assets/gridPattern.png" />
     </a-assets>
     <!-- Camera -->
-    <a-entity id="rig" position="0.3 -0.5 -50" wasd-controls="false" rotation="0 0 0" look-controls="false" aframe-injected="" data-aframe-inspector-original-camera="">
-      <a-camera rotation="0 0 0w" camera="" position="-0.23310647321435757 1.25 -49.79955565377042" look-controls="" wasd-controls="" data-aframe-inspector-original-camera=""></a-camera>
+    <a-entity id="rig" position="0.3 -0.5 -50" rotation="0 0 0" aframe-injected="">
+      <a-camera id="cam" rotation="0 0 0" camera="" cursor="rayOrigin: mouse" position="-0.26 1.25 -50" look-controls="" wasd-controls="enabled: false" animation="name: about_anim">
+      </a-camera>
     </a-entity>
     <a-entity geometry="primitive: plane" material="color: black" rotation="-90 0 0" scale="1000 1000 500" position="0 -2 0"></a-entity>
-    <a-entity geometry="primitive:plane;width:10000;height:10000" rotation="-90 0 0" material="src:#grid;repeat:10000 10000;transparent:true;metalness:0.6;roughness:0.4;sphericalEnvMap:#sky" position="0 -0.5 0" scale="1 1 1" visible="true"></a-entity>
+    <a-entity geometry="primitive:plane;width:10000;height:10000" rotation="-90 0 0" material="src:#grid;repeat:10000 10000;transparent:true;metalness:0.6;roughness:0.4;sphericalEnvMap:#sky" position="0 -0.8w 0" scale="1 1 1" visible="true"></a-entity>
     <a-entity geometry="primitive: plane" material="color: black" rotation="-90 0 0" scale="10 1000 500" position="0 -0.5  0"></a-entity>
+    <!-- Click Control -->
+    <!-- <a-entity raycaster="objects: .clickable" cursor></a-entity> -->
 
+    <!-- Menu Buttons -->
+    <a-box id="about" class="button" position="0 0 0" animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500";
+    animation__mouseleave="property: components.material.material.color; type: color; to: red; startEvents: mouseleave; dur: 500";>></a-box>
+    <a-box id="services" class="button"></a-box>
+    <a-box id="learn" class="button"></a-box>
+    <a-box id="contact" class="button"></a-box>
     <!-- Models -->
     <!-- <a-gltf-model src="#devintro" animation-mixer="loop: repeat; timeScale: 1.2" sound="src: #welcome; autoplay: true" position="0 1.16 5 " rotation="180.73985 170 195" animation="property: rotation; to: 180.73985 173 195; dur: 5000; easing: linear; loop: true" animation__2="property: rotation; to: 180.73985 165 195; dur: 5000; easing: linear; loop: true" color="tomato"></a-gltf-model> -->
     <!-- <a-gltf-model src="#island" animation-mixer="timeScale: 1.2" gltf-model="/assets/models/island/island.gltf"
@@ -47,10 +56,13 @@
     <!-- <a-entity id="light" light="type: directional; color: white; intensity: 3.0; castShadow: true"  position="0 9 0"></a-entity> -->
   </a-scene>
   <script>
-
-    const button = document.getElementById("#enter_button")
-    button.addEventListener('click, function (evt) {// ... }')
-s
+    const main = document.querySelector("#cam");
+    const button = document.querySelector("#about");
+    const forward = document.querySelector("#anim_forward");
+      button.addEventListener("click", function(evt) {
+        main.setAttribute(animation, {'property': position,
+                                 'to': {x: -0.26, y: 1.25, z: -100}});
+      });
   </script>
 </body>
 
