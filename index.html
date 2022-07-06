@@ -22,6 +22,7 @@
       <a-asset-item id="island" src="/assets/models/island/island.gltf"></a-asset-item>
       <a-asset-item id="vr" src="/assets/models/vrdev/VRDEV.gltf"></a-asset-item>
       <a-asset-item id="tron" src="/assets/models/tron/tdctron.gltf"></a-asset-item>
+      <a-asset-item id="logo" src="/assets/models/logo/tdc_logo.gltf"></a-asset-item>
       <audio id="welcome" src="/assets/sounds/intro.ogg" preload="auto"></audio>
       <img id="bg" src="assets/models/island/space.png" />
       <img id="grid" src="assets/gridPattern.png" />
@@ -30,11 +31,8 @@
     <a-entity id="rig" position="0.3 -0.5 -50" rotation="0 0 0" aframe-injected="">
       <a-camera id="cam" rotation="0 0 0" camera="" cursor="rayOrigin: mouse" position="-0.26 1.25 -50" look-controls="" wasd-controls="enabled: false" animation="name: about_anim">
       
-      <!-- Menu Buttons -->
-    <a-box id="about" class="button" scale="1 0.3 1" position="0 1 -5" animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500" ;="" animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500" material="" geometry="">&gt;</a-box>
-    <a-box id="services" class="button" scale="1 0.3 1" position="0 0.5 -5" animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500" ;="" animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500" material="" geometry="">&gt;</a-box>
-    <a-box id="learn" class="button" scale="1 0.3 1" position="0 0 -5" animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500" ;="" animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500" material="" geometry="">&gt;</a-box>
-    <a-box id="contact" class="button" scale="1 0.3 1" position="0 -0.5 -5" animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500" ;="" animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500" material="" geometry="">&gt;</a-box>
+        <!-- HUD -->
+        <a-gltf-model src="#logo" animation="property: rotation; loop: repeat; from: 0 -180 0; to: 0 180 0; easing: linear;" position="-0.17265 -0.34435 -0.49485" scale="0.106 0.10574 0.10574" gltf-model="/assets/models/logo/tdc_logo.gltf" rotation="0 180 0" id="tdc"></a-gltf-model>
       
       </a-camera>
     </a-entity>
@@ -44,14 +42,18 @@
     <!-- Click Control -->
     <!-- <a-entity raycaster="objects: .clickable" cursor></a-entity> -->
 
-    
+     <!-- Menu Buttons -->
+     <a-box id="about" class="button" scale="1 0.3 1" position="0 1.8 -106" animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500" ;="" animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500" material="" geometry="">&gt;</a-box>
+     <a-box id="services" class="button" scale="1 0.3 1" position="0 1.2 -106" animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500" ;="" animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500" material="" geometry="">&gt;</a-box>
+     <a-box id="learn" class="button" scale="1 0.3 1" position="0 0.7 -106" animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500" ;="" animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500" material="" geometry="">&gt;</a-box>
+     <a-box id="contact" class="button" scale="1 0.3 1" position="0 0.2 -106" animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500" ;="" animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500" material="" geometry="">&gt;</a-box>
   
     <!-- Models -->
     <!-- <a-gltf-model src="#devintro" animation-mixer="loop: repeat; timeScale: 1.2" sound="src: #welcome; autoplay: true" position="0 1.16 5 " rotation="180.73985 170 195" animation="property: rotation; to: 180.73985 173 195; dur: 5000; easing: linear; loop: true" animation__2="property: rotation; to: 180.73985 165 195; dur: 5000; easing: linear; loop: true" color="tomato"></a-gltf-model> -->
     <!-- <a-gltf-model src="#island" animation-mixer="timeScale: 1.2" gltf-model="/assets/models/island/island.gltf"
       position="0 -6.4 0" rotation="0 180 0"></a-gltf-model>
-    <a-gltf-model src="#vr" animation-mixer position="0 0.3 0.3" rotation="0 0 0"></a-gltf-model>
-    <a-gltf-model src="#ships" animation-mixer="" position="0 -11.27 -107.10026" scale="26.3 26.3 26.3" gltf-model="/assets/models/ships/smallfleet.gltf"></a-gltf-model> -->
+    <a-gltf-model src="#vr" animation-mixer position="0 0.3 0.3" rotation="0 0 0"></a-gltf-model> -->
+    
 
     <a-entity gltf-model="#tron" animation-mixer position="0 0 1" rotation="0 90 0" scale="0.5 0.5 0.5"></a-entity>
     <a-entity light="intensity: 0.6; castShadow: true" position="-0.01329 1 -1.18824" data-aframe-default-light="" aframe-injected=""></a-entity>
