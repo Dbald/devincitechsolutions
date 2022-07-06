@@ -96,6 +96,9 @@
 
         <a-gltf-model src="#logo"
           animation="property: rotation; loop: repeat; from: 0 -180 0; to: 0 180 0; easing: linear;"
+          animation__mouseenter="property: scale; to: 0.15 0.15 0.15; startEvents: mouseenter; dur: 200"
+      ;=""
+      animation__mouseleave="property: scale; to: 0.106 0.10574 0.10574; startEvents: mouseleave; dur: 200"
           position="-0.17265 -0.34435 -0.49485" scale="0.106 0.10574 0.10574"
           gltf-model="/assets/models/logo/tdc_logo.gltf" rotation="0 180 0" id="tdc"></a-gltf-model>
 
