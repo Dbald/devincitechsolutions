@@ -92,14 +92,14 @@
         <!-- Fade In -->
         <!-- <a-box id="fade" position="0 0 -2" animation="property: components.material.material.opacity; from: 1; to: 0; autoplay: true" ></a-box> -->
         <!-- HUD -->
-        <a-entity text="value: Still a WIP but feel free to explore the progress :); align: center; color: white; side: double" scale="2.16189 4.71178 5" id="wip" position="-0.007 1.73143 -3.97248"></a-entity>
+        <a-entity text="value: Still a WIP but feel free to explore the progress :); align: center; color: white; side: double" scale="2.16189 4.71178 5" id="wip" position="-0.007 3 -3.97248"></a-entity>
 
         <a-gltf-model src="#logo"
           animation="property: rotation; loop: repeat; from: 0 -180 0; to: 0 180 0; easing: linear;"
-          animation__mouseenter="property: scale; to: 0.15 0.15 0.15; startEvents: mouseenter; dur: 200"
+          animation__mouseenter="property: scale; to: 0.1 0.1 0.1; startEvents: mouseenter; dur: 200"
       ;=""
-      animation__mouseleave="property: scale; to: 0.106 0.10574 0.10574; startEvents: mouseleave; dur: 200"
-          position="-0.17265 -0.34435 -0.49485" scale="0.106 0.10574 0.10574"
+      animation__mouseleave="property: scale; to: 0.08 0.08 0.08; startEvents: mouseleave; dur: 200"
+          position="-0.17265 -0.34435 -0.49485" scale="0.08 0.08 0.08"
           gltf-model="/assets/models/logo/tdc_logo.gltf" rotation="0 180 0" id="tdc"></a-gltf-model>
 
       </a-camera>
@@ -118,7 +118,7 @@
     <!-- <a-entity raycaster="objects: .clickable" cursor></a-entity> -->
 
     <!-- Menu Buttons -->
-    <a-box id="about_button" class="button" scale="1 0.3 1" position="0 1.8 -106"
+    <a-box id="about_button" class="button" scale="1 0.3 1" position="0 1.8 -104"
       animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 200"
       ;=""
       animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 200"
@@ -126,7 +126,7 @@
       <a-entity text="value: ABOUT; align: center; color: black; side: double" scale="5 12 5" id="about"
         position="-0.002 0 0.5"></a-entity>
     </a-box>
-    <a-box id="services_button" class="button" scale="1 0.3 1" position="0 1.2 -106"
+    <a-box id="services_button" class="button" scale="1 0.3 1" position="0 1.2 -104"
       animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500"
       ;=""
       animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500"
@@ -134,7 +134,7 @@
       <a-entity text="value: SERVICES; align: center; color: black; side: double" scale="4 10 5" id="about"
         position="-0.002 0 0.5"></a-entity>
     </a-box>
-    <a-box id="learn_button" class="button" scale="1 0.3 1" position="0 0.7 -106"
+    <a-box id="learn_button" class="button" scale="1 0.3 1" position="0 0.7 -104"
       animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500"
       ;=""
       animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500"
@@ -142,12 +142,12 @@
       <a-entity text="value: LEARN; align: center; color: black; side: double" scale="5 12 5" id="about"
         position="-0.002 0 0.5"></a-entity>
     </a-box>
-    <a-box id="contact_button" class="button" scale="1 0.3 1" position="0 0.2 -106"
+    <a-box id="contact_button" class="button" scale="1 0.3 1" position="0 0.2 -104"
       animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500"
       ;=""
       animation__mouseleave="property: components.material.material.color; type: color; to: white; startEvents: mouseleave; dur: 500"
       material="" geometry="">
-      <a-entity text="value: CONTACT; align: center; color: black; side: double" scale="5 12 5" id="about"
+      <a-entity text="value: CONTACT; align: center; color: black; side: double" scale="4 12 5" id="about"
         position="-0.002 0 0.5"></a-entity>
     </a-box>
 
